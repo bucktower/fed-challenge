@@ -2,7 +2,8 @@
             Global
 *******************************/
 
-html, body {
+html,
+body {
   font-family: "Lato", Arial, sans-serif;
   margin: 0px;
   padding: 0px;
@@ -20,29 +21,179 @@ h5 {
   font-family: "Merriweather", Times New Roman, serif;
 }
 
-
-.button {
-
-}
-
-
-
 /*******************************
               Page
 *******************************/
 
 .hero {
+  background-color: #dff1e8;
+  padding-bottom: 72px;
+}
 
+.logo-container {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 400;
+  width: 319px;
+}
+
+.hero p {
+  width: 406px;
+  margin-top: 32px;
+  font-family: "Lato";
+  font-weight: 400;
+  color: #555555;
+  line-height: 32px;
+  font-size: 19px;
+}
+
+.hero button {
+  margin-top: 36px;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.08) 100%
+    ),
+    #4daf7c;
+  color: #ffffff;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
+  cursor: pointer;
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+.hero button:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.08) 100%
+    ),
+    #4daf7c;
 }
 
 .page {
+  padding-top: 36px;
+}
 
+.cards-flex {
+  display: flex;
+  gap: 54px;
+  margin-top: 72px;
+}
+
+.card {
+  width: 340px;
+  height: 386px;
+  box-shadow: 0px 15px 35px rgba(50, 50, 93, 0.1),
+    0px 5px 15px rgba(0, 0, 0, 0.07);
+  transform: scale(1);
+  transition: box-shadow 400ms, transform 400ms;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-image-container {
+  width: 340px;
+  height: 222px;
+  background-color: #2c2e30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-text-container {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.card-text-container h3 {
+  font-family: "Lato";
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card-text-container p {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #555555;
+}
+
+.cta {
+  position: relative;
+}
+
+.bottom-cta {
+  display: flex;
+  margin-top: 116px;
+  height: 253px;
+  justify-content: space-evenly;
+  background-image: url("/images/cta-bg.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.bottom-cta p {
+  max-width: 300px;
+  color: #7c7c7c;
+  font-size: 26px;
+  text-align: center;
+  line-height: 31px;
+}
+
+.highlight {
+  color: #339366;
+  font-weight: 700;
+}
+
+.middle-pole {
+  width: 2px;
+  background-color: rgba(0, 0, 0, 0.09);
+  position: absolute;
+  left: 50%;
+  height: 148px;
 }
 
 .footer {
-
+  background-color: #202020;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
+.footer .container {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: min-content max-content;
+}
+
+.footer-text {
+  font-size: 11px;
+  margin-left: 18px;
+  color: #646464;
+  align-self: center;
+}
 
 /*******************************
          Responsive
@@ -50,14 +201,10 @@ h5 {
 
 /* Small Monitor */
 @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-
-
 }
-
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
-
 }
 
 /* Mobile */
